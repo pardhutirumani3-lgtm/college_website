@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About CRR College</title>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #004080;
+      --secondary-color: #f8f9fa;
+      --text-color: #333;
+      --highlight-color: #ffcc00;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px 20px;
+      background-color: white;
+      flex-wrap: wrap;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .header-text h1 {
+      font-size: 52px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+          color: #004080;
+    }
+
+    .about {
+      display: flex;
+      gap: 30px;
+      padding: 40px;
+      background-color: white;
+      line-height: 1.6;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .about p {
+      flex: 2;
+      font-size: 16px;
+      color: #333;
+      text-align: justify;
+    }
+
+    .about img {
+      flex: 1;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      padding: 30px 0 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+
+    .social-icons a.facebook:hover { background-color: #3b5998; }
+    .social-icons a.twitter:hover { background-color: #55acee; }
+    .social-icons a.instagram:hover { background-color: #e4405f; }
+    .social-icons a.linkedin:hover { background-color: #0077b5; }
+
+    footer p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .header-text h1 {
+        font-size: 32px;
+      }
+
+      .header-text p {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .about {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .about p {
+        font-size: 15px;
+        text-align: left;
+      }
+
+      .about img {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img class="logo" src="./images/crr logo.png" alt="CRR Logo" />
+    <div class="header-text">
+      <h1>Sir CR REDDY AUTONOMOUS COLLEGE</h1>
+      <p>Eluru, Eluru district - 534007</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="mainpage.html">Home</a>
+    <a href="image.html">Images</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="#">Fees</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="about">
+    <p>
+      <strong>About Sir C R REDDY</strong><br><br>
+      Sir C R Reddy College, established in 1945, is named after a distinguished educationalist and the founding Vice-Chancellor of Andhra University. It offers a range of undergraduate and postgraduate programs under the Sir C R Reddy Educational Institutions society.<br><br>
+
+      <strong>Affiliation and Recognition</strong><br>
+      Affiliated with Adikavi Nannaya University since 2015. Recognized by UGC under Act 2(f) and 12(B) since 1969. Granted autonomy from 1987-88 to 2031-32.<br><br>
+
+      <strong>Accreditation and Certifications</strong><br>
+      NAAC accredited at 'A' level in 2005, 2011, 2017, and 2022. Designated as College with Potential for Excellence by UGC in 2010. ISO 9001:2015 certified.<br><br>
+
+      <strong>Infrastructure</strong><br>
+      Includes Degree Blocks, PG Blocks (A, B, C), Central Library, Auditorium, Gymnasium, Bank, Canteen, Dining Hall, Distance Education Block.<br><br>
+
+      <strong>Hostels and Security</strong><br>
+      Separate hostels for boys and girls with on-campus security.<br><br>
+
+      <strong>Conclusion</strong><br>
+      The college continues its legacy of academic excellence, offering students a well-rounded education in a modern, secure campus.
+    </p>
+    <img src="./images/crr logo.png" alt="Sir CR Reddy College Image" />
+  </section>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" class="twitter" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" class="linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Sir CR Reddy Autonomous College. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

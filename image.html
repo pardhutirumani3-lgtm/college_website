@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sir CR Reddy College</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #004080;
+      --secondary-color: #f8f9fa;
+      --text-color: #333;
+      --highlight-color: #ffcc00;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px 20px;
+      background-color: white;
+      flex-wrap: wrap;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .header-text h1 {
+      font-size: 52px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: whitesmoke;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #004080;
+    }
+
+    .build, .fest, .infra {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin: 50px 20px 40px;
+    }
+
+    .build img,
+    .fest img,
+    .infra img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      padding: 30px 0 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+
+    .social-icons a.facebook:hover { background-color: #3b5998; }
+    .social-icons a.twitter:hover { background-color: #55acee; }
+    .social-icons a.instagram:hover { background-color: #e4405f; }
+    .social-icons a.linkedin:hover { background-color: #0077b5; }
+
+    footer p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .header-text h1 {
+        font-size: 32px;
+      }
+
+      .header-text p {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      .build img,
+      .fest img,
+      .infra img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img class="logo" src="./images/crr logo.png" alt="CRR Logo" />
+    <div class="header-text">
+      <h1>Sir CR REDDY AUTONOMOUS COLLEGE</h1>
+      <p>Eluru, Eluru district - 534007</p>
+    </div>
+  </div>
+
+  <nav>
+    <a href="mainpage.html">Home</a>
+    <a href="image.html">Images</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="#">Fees</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="build">
+    <img src="./images/crr build1.jpeg" alt="College Building 1">
+    <img src="./images/crr build2.jpeg" alt="College Building 2">
+    <img src="./images/crr build3.jpeg" alt="College Building 3">
+    <img src="./images/crr build6.jpeg" alt="College Building 4">
+    <img src="./images/crr build7.jpeg" alt="College Building 5">
+    <img src="./images/crr build9.jpeg" alt="College Building 6">
+  </div>
+
+  <div class="fest">
+    <img src="./images/crr fest1.jpg" alt="College Fest 1">
+    <img src="./images/crr fest2.jpg" alt="College Fest 2">
+    <img src="./images/crr fest3.jpg" alt="College Fest 3">
+    <img src="./images/crr fest4.jpg" alt="College Fest 4">
+    <img src="./images/crr fest5.jpg" alt="College Fest 5">
+    <img src="./images/crr fest6.jpg" alt="College Fest 6">
+    <img src="./images/crr fest7.jpeg" alt="College Fest 7">
+    <img src="./images/crr fest8.jpeg" alt="College Fest 8">
+    <img src="./images/crr infra7.webp" alt="Infrastructure 7">
+    <img src="./images/republic.jpeg" alt="Republic Day Event">
+    <img src="./images/principal.jpeg" alt="Principal Photo">
+    <img src="./images/ncc.jpeg" alt="NCC Activity">
+  </div>
+
+  <div class="infra">
+    <img src="./images/crr infra1.jpg" alt="Infrastructure 1">
+    <img src="./images/crr infra2.jpg" alt="Infrastructure 2">
+    <img src="./images/crr infra3.png" alt="Infrastructure 3">
+    <img src="./images/crr infra4.jpg" alt="Infrastructure 4">
+    <img src="./images/crr infra5.jpeg" alt="Infrastructure 5">
+    <img src="./images/crr infra6.jpeg" alt="Infrastructure 6">
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" class="twitter" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" class="linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Sir CR Reddy Autonomous College. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

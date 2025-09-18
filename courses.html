@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRR College PG Courses</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #004080;
+      --secondary-color: #f8f9fa;
+      --text-color: #333;
+      --highlight-color: #ffcc00;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px 20px;
+      background-color: white;
+      flex-wrap: wrap;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      width: 100px;
+      height: auto;
+    }
+
+    .header-text h1 {
+      font-size: 52px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    nav {
+      background-color: var(--primary-color);
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: whitesmoke;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #004080;
+    }
+
+    .content {
+      padding: 30px 20px;
+    }
+
+    .content > h2 {
+      font-size: 28px;
+      color: var(--primary-color);
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    section.course {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      background-color: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 18px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .course-content {
+      flex: 1 1 60%;
+      min-width: 300px;
+    }
+
+    .course img {
+      flex: 1 1 35%;
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+
+    section.course h2 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    section.course ul {
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    section.course ul li {
+      margin-bottom: 6px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .signup-btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 10px 20px;
+      margin-top: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .signup-btn:hover {
+      background-color: #0d155f;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      padding: 30px 0 20px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+      margin-top: 30px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+
+    .social-icons a.facebook:hover { background-color: #3b5998; }
+    .social-icons a.twitter:hover { background-color: #55acee; }
+    .social-icons a.instagram:hover { background-color: #e4405f; }
+    .social-icons a.linkedin:hover { background-color: #0077b5; }
+
+    footer p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #ddd;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .header-text h1 {
+        font-size: 32px;
+      }
+
+      .header-text p {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      section.course {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .course img {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .course-content {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <img class="logo" src="./images/crr logo.png" alt="CRR Logo" />
+    <div class="header-text">
+      <h1>Sir CR REDDY AUTONOMOUS COLLEGE</h1>
+      <p>Eluru, Eluru district - 534007</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="mainpage.html">Home</a>
+    <a href="image.html">Images</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="#">Fees</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main class="content">
+    <h2>Offered PG Courses in Our College</h2>
+
+    <section class="course">
+      <div class="course-content">
+        <h2>MBA Course</h2>
+        <ul>
+          <li>Finance: Financial management, investments, and accounting.</li>
+          <li>Marketing: Consumer behavior, market research, advertising.</li>
+          <li>Human Resources: Talent acquisition, employee relations, compensation.</li>
+          <li>Operations Management: Supply chain, logistics, production processes.</li>
+          <li>Business Analytics: Data analysis, decision-making, business intelligence.</li>
+          <li>Other: International Business, Healthcare Management, Entrepreneurship.</li>
+        </ul>
+        <a href="signup_mba.html" class="signup-btn" aria-label="Sign up for MBA">Sign up</a>
+      </div>
+      <img src="./images/mba course pic.jpg" alt="MBA Course Image" />
+    </section>
+
+    <section class="course">
+      <div class="course-content">
+        <h2>MSc Course</h2>
+        <ul>
+          <li>Biotechnology: Molecular biology, genetic engineering, bioprocessing.</li>
+          <li>Chemistry: Organic, inorganic, analytical, and physical chemistry.</li>
+          <li>Physics: Mechanics, thermodynamics, electromagnetism, quantum mechanics.</li>
+          <li>Mathematics: Calculus, linear algebra, differential equations, probability.</li>
+          <li>Computer Science: Programming, algorithms, data structures, software engineering.</li>
+        </ul>
+        <a href="signup_msc.html" class="signup-btn" aria-label="Sign up for MSc">Sign up</a>
+      </div>
+      <img src="./images/msc course image.jpeg" alt="MSc Course Image" />
+    </section>
+
+    <section class="course">
+      <div class="course-content">
+        <h2>MCA Course</h2>
+        <ul>
+          <li>Duration: 2 years (4 semesters).</li>
+          <li>Focus: Computer applications and software development.</li>
+          <li>Curriculum: Programming, DBMS, emerging technologies.</li>
+          <li>Specializations: AI, Data Science, Cybersecurity, Cloud Computing, Web Tech, etc.</li>
+          <li>Admission: Based on entrance exams like NIMCET, CUET PG, etc.</li>
+          <li>Eligibility: Bachelor’s degree with mathematics as a subject.</li>
+        </ul>
+        <a href="signup_mca.html" class="signup-btn" aria-label="Sign up for MCA">Sign up</a>
+      </div>
+      <img src="./images/mca course image.webp" alt="MCA Course Image" />
+    </section>
+
+    <section class="course">
+      <div class="course-content">
+        <h2>MCom Course</h2>
+        <strong>M.Com Subjects include:</strong>
+        <ul>
+          <li>Accounting Theory and Practice</li>
+          <li>Statistical Analysis</li>
+          <li>Business Environment</li>
+          <li>Financial Management</li>
+          <li>Marketing Management</li>
+          <li>International Business</li>
+          <li>Organizational Theory and Behavior</li>
+          <li>Corporate Finance</li>
+        </ul>
+        <a href="signup_mcom.html" class="signup-btn" aria-label="Sign up for MCom">Sign up</a>
+      </div>
+      <img src="./images/mcom course image.jpeg" alt="MCom Course Image" />
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" class="facebook" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" class="twitter" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" class="instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" class="linkedin" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Sir CR Reddy Autonomous College. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

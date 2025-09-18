@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MCA Department</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary-color: #004080;
+      --secondary-color: #f8f9fa;
+      --text-color: #333;
+      --highlight-color: #ffcc00;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: var(--text-color);
+    }
+
+    .header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .header h1 {
+      font-size: 50px;
+      color: whitesmoke;
+      margin-left: 270px;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #003060;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: var(--highlight-color);
+      color: #003060;
+    }
+
+    .main-content {
+      display: flex;
+      gap: 10px;
+      padding: 40px;
+      width: 100%;
+      margin: 0px;
+      background-color: white;
+      flex-wrap: wrap;
+    }
+
+    .main-content img {
+      max-width: 750px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.9);
+      
+    }
+
+    .main-text {
+      flex: 1;
+    }
+
+    .main-text h2 {
+      font-size: 26px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+      margin-left: 28px;
+      font-size: 35px;
+      font-weight: bolder;
+    }
+
+    .main-text p {
+      line-height: 1.7;
+      font-size: 16px;
+      text-align: justify;
+      margin-left: 30px;
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      padding: 30px 0 20px;
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      width: 40px;
+      height: 40px;
+      background-color: #333;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s;
+    }
+
+    .social-icons a.facebook:hover { background-color: #3b5998; }
+    .social-icons a.twitter:hover { background-color: #55acee; }
+    .social-icons a.instagram:hover { background-color: #e4405f; }
+    .social-icons a.linkedin:hover { background-color: #0077b5; }
+
+    footer p {
+      font-size: 14px;
+      margin-top: 10px;
+      color: whitesmoke;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .header-left {
+        flex-direction: column;
+      }
+
+      .header-left h1 {
+        font-size: 24px;
+      }
+
+      nav a {
+        display: block;
+        margin: 8px auto;
+      }
+
+      .main-content {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .main-content img {
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="header">
+    <div class="header-left">
+      
+      <h1>MASTER OF COMPUTER APPLICATIONS</h1>
+    </div>
+  </div>
+
+  
+  <nav>
+    <a href="mca_home.html">Home</a>
+    <a href="mca_images.html">Images</a>
+    <a href="students.php">Students</a>
+    <a href="faculty.html">Faculty</a>
+    <a href="semister.html">Semisters</a>
+    <a href="exampapers.php">Exam Papers</a>
+    <a href="pdf.php">pdf's</a>
+    <a href="blog.php">Blogs</a>
+    <a href="freshersday.html">Freshers Day</a>
+    <a href="#">Signature Day</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <img src="./images/mca main img.jpg" alt="MCA Department Main Image">
+    <div class="main-text">
+      <h2>WELCOME STUDENTS</h2>
+      <p>
+        A warm welcome to all the new MCA students! We're thrilled to have you join our community of learners. This new chapter is filled with exciting opportunities for growth and knowledge. Embrace the challenges, explore your passions, and forge strong relationships. <br><br>
+
+        A new beginning, a fresh start, and a chance to shine.<br>
+        Welcome to MCA, a world of digital wonders.<br>
+        Let's make this journey together unforgettable.<br>
+        Embrace the learning process, it's a beautiful thing.<br>
+        We're here to support you every step of the way.<br>
+        May your studies be filled with joy and inspiration.<br>
+        Don't be afraid to ask questions, we're here to help.<br>
+        This is your time to explore, create, and innovate.<br>
+        We believe in your potential and look forward to seeing you succeed.<br>
+        Welcome to the MCA family, let's learn together.<br>
+        May your future be bright and full of success.<br>
+        Enjoy the ride, the MCA program is a fantastic journey.<br>
+        Never stop learning, always keep growing.<br>
+        We hope your time at MCA is filled with laughter and camaraderie.<br>
+        Congratulations on this exciting new adventure.<br>
+        Let's work together to create a vibrant learning environment.<br>
+        May your MCA years be a source of inspiration and joy.<br>
+        Welcome to the digital world, let's explore it together.<br>
+        We're here to help you succeed in your MCA studies.<br>
+        Welcome! We're so glad to have you!
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://twitter.com" class="twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <p>&copy; 2025 Master of Computer Applications. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
